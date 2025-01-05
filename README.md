@@ -7,43 +7,7 @@
 
 Rembg is a tool to remove images background.
 
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img alt="example car-1" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-1.jpg" width="100" />
-  <img alt="example car-1.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-1.out.png" width="100" />
-  <img alt="example car-2" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-2.jpg" width="100" />
-  <img alt="example car-2.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-2.out.png" width="100" />
-  <img alt="example car-3" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-3.jpg" width="100" />
-  <img alt="example car-3.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-3.out.png" width="100" />
-</p>
-
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img alt="example animal-1" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-1.jpg" width="100" />
-  <img alt="example animal-1.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-1.out.png" width="100" />
-  <img alt="example animal-2" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-2.jpg" width="100" />
-  <img alt="example animal-2.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-2.out.png" width="100" />
-  <img alt="example animal-3" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-3.jpg" width="100" />
-  <img alt="example animal-3.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-3.out.png" width="100" />
-</p>
-
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img alt="example girl-1" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-1.jpg" width="100" />
-  <img alt="example girl-1.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-1.out.png" width="100" />
-  <img alt="example girl-2" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-2.jpg" width="100" />
-  <img alt="example girl-2.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-2.out.png" width="100" />
-  <img alt="example girl-3" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.jpg" width="100" />
-  <img alt="example girl-3.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.out.png" width="100" />
-</p>
-
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img alt="example anime-girl-1" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-1.jpg" width="100" />
-  <img alt="example anime-girl-1.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-1.out.png" width="100" />
-  <img alt="example anime-girl-2" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-2.jpg" width="100" />
-  <img alt="example anime-girl-2.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-2.out.png" width="100" />
-  <img alt="example anime-girl-3" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-3.jpg" width="100" />
-  <img alt="example anime-girl-3.out" src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/anime-girl-3.out.png" width="100" />
-</p>
-
-**If this project has helped you, please consider making a [donation](https://www.buymeacoffee.com/danielgatis).**
+**If this project has helped you, please consider making a [donation](https://buymeacoffee.com/techpd).**
 
 ## Sponsor
 
@@ -321,12 +285,12 @@ To see a full list of examples on how to use rembg, go to the [examples](USAGE.m
 
 ## Usage as a docker
 
-Just replace the `rembg` command for `docker run danielgatis/rembg`.
+Just replace the `rembg` command for `docker run /rembg`.
 
 Try this:
 
 ```shell
-docker run -v path/to/input:/rembg danielgatis/rembg i input.png path/to/output/output.png
+docker run -v path/to/input:/rembg /rembg i input.png path/to/output/output.png
 ```
 
 ## Models
@@ -351,11 +315,6 @@ The available models are:
 - birefnet-cod ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-COD-epoch_125.onnx), [source](https://github.com/ZhengPeng7/BiRefNet)): A pre-trained model for concealed object detection (COD).
 - birefnet-massive ([download](https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-massive-TR_DIS5K_TR_TEs-epoch_420.onnx), [source](https://github.com/ZhengPeng7/BiRefNet)): A pre-trained model with massive dataset.
 
-### How to train your own model
-
-If You need more fine tuned models try this:
-<https://github.com/danielgatis/rembg/issues/193#issuecomment-1055534289>
-
 ## Some video tutorials
 
 - <https://www.youtube.com/watch?v=3xqwpXjxyMQ>
@@ -379,14 +338,10 @@ This library directly depends on the [onnxruntime](https://pypi.org/project/onnx
 
 Liked some of my work? Buy me a coffee (or more likely a beer)
 
-<a href="https://www.buymeacoffee.com/danielgatis" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;"></a> <!-- markdownlint-disable MD033 -->
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=danielgatis/rembg&type=Date)](https://star-history.com/#danielgatis/rembg&Date)
+<a href="https://buymeacoffee.com/techpd" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;"></a> <!-- markdownlint-disable MD033 -->
 
 ## License
 
-Copyright (c) 2020-present [Daniel Gatis](https://github.com/danielgatis)
+Copyright (c) 2020-present [Daniel Gatis](https://github.com/Techpd)
 
 Licensed under [MIT License](./LICENSE.txt)
